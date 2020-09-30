@@ -8,3 +8,5 @@
     - name: Write Output
       debug:
          msg: "Something here"
+    - name: Ping
+      action: ping

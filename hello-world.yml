@@ -3,9 +3,8 @@
   hosts: all
  
   tasks:
-  - name: Hello World!
-    shell: echo "Hi! Tower is working."
-  tasks:  
-  - name: Write Output
-    msg:
-    - "Something here"
+    - name: Hello World!
+      shell: echo "Hi! Tower is working."
+    - name: Write Output
+      debug:
+         msg: "Something here"

@@ -4,8 +4,6 @@
   gather_facts: no 
  
   tasks:
-    - name: Hello World!
-      shell: echo "Hi! Tower is working."
     - name: Write Output
       debug:
          msg: "Something here"

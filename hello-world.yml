@@ -1,8 +1,7 @@
 ---
 - name: Hello World!
   hosts: all
-  gather_facts: no
-  ansible_connection: ansible.netcommon.network_cli 
+  gather_facts: no 
  
   tasks:
     - name: Write Output

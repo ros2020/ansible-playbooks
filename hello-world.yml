@@ -10,6 +10,4 @@
     - name: run show version on remote devices
       cisco.ios.ios_command:
         commands: show version
-        vars:
-          ansible_command_timeout: 300
-          
+        

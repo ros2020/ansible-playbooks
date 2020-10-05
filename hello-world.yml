@@ -12,3 +12,4 @@
         commands: show version
       become: yes
       become_method: enable
+      ansible_network_os=cisco.ios.ios

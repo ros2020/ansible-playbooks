@@ -8,7 +8,7 @@
       debug:
          msg: "Something here"
     - name: run show version on remote devices
-      cisco.ios.ios_command:
-        become: yes
+      cisco.ios.ios_command:  
         commands: show version
-        
+      become: yes
+      become_method: enable

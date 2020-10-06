@@ -1,12 +1,18 @@
 ---
 - name: Hello World!
   hosts: all
-  gather_facts: yes
+  gather_facts: no
  
   tasks:
+    - name: Cisco Facts
+      ciso.ios.ios_facts:
+        gather_subset: all
+      register: my_facts
+      
     - name: Write Output
       debug:
-         msg: "{{hostvars}}"
+         msg: "{{my_facts}}"
+         
     - name: run show version on remote devices
       cisco.ios.ios_command:  
         commands: show version 

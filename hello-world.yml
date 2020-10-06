@@ -5,7 +5,7 @@
  
   tasks:
     - name: Cisco Facts
-      ciso.ios.ios_facts:
+      cisco.ios.ios_facts:
         gather_subset: all
       register: my_facts
       

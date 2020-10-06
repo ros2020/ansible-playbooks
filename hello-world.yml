@@ -4,6 +4,9 @@
   gather_facts: no
  
   tasks:
+    - name: Ping
+      ping:
+      
     - name: Cisco Facts
       cisco.ios.ios_facts:
         gather_subset: all

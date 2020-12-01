@@ -18,7 +18,7 @@
          
     - name: run show version on remote devices
       cisco.ios.ios_command:  
-        commands: show version
+        commands: show interface status
       register: version_info  
       #become: yes
       #become_method: enable
